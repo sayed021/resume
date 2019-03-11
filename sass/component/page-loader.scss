@@ -1,0 +1,18 @@
+.pageLoader {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	display: table;
+	background: #fff;
+	.loader-wrap {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		width: 100%;
+	}
+	.progress {
+		max-width: 350px;
+		margin: 0 auto;
+	}
+}

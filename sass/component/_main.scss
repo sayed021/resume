@@ -1,0 +1,90 @@
+.main-content {
+	width: calc(100vw - 340px);
+    height: calc(100vh - 25px);
+    margin-top: 13px;
+    margin-left: 320px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 5px 5px 5px 5px;
+    background: #fff;
+    background: linear-gradient(to right, #fff, #1EAAC1);
+    display: flex;
+    flex-direction: column;
+	position: relative;
+	&:before {
+		content:'';
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 50%;
+		height: 100%;
+		border-radius: 50% 0 0 50%;
+		background: linear-gradient(to right, #DEE8CE, #1EAAC1);
+		z-index: 0;
+	}
+	&:after {
+        background-image: linear-gradient( rgba(0,0,0,0.3) 0.3%, transparent 99.7%);
+		content:'';
+		display: block;
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		right: 10px;
+		width: calc(100% - 10px);
+		height: 30px;
+		border-radius: 5px 5px 0 0;
+		z-index: 2;
+	}
+	.contant {
+		height: 100%;
+	    overflow: auto;
+	    margin-right: -22px;
+	    padding: 20px;
+		border-radius: 5px;
+		position: relative;
+		z-index: 2;
+		background: transparent;
+		
+	}
+	h1,h2,h3,h4,h5 { 
+		margin: 0;
+		padding: 0;
+		/*position: sticky;*/
+		/*top: 0;*/
+		&:after {
+			content:'';
+			display: inline-block;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			z-index: 0;
+			height: 5px;
+			background: -webkit-linear-gradient(to right, #000000, #3ab3c3);
+			background: -o-linear-gradient(to right, #000000, #3ab3c3);
+			background: linear-gradient(to right, rgba(0,0,0,0.5), #3ab3c3);
+			border-left: 0px solid #22a6d8a8;
+		}
+	}
+	.card {
+		padding: 10px;
+		border-radius: 20px;
+		background: rgba(255,255,255,0.3);
+		background: -webkit-linear-gradient(left, #20abc1, rgba(82,187,197,0.3));
+		background: -o-linear-gradient(left, #20abc1, rgba(82,187,197,0.3));
+		background: linear-gradient(to right, #20abc1, rgba(82,187,197,0.3));
+		color: #fff;
+
+		h2 {
+			font-size: 40px;
+			letter-spacing: 2px;
+		}
+		h3 { font-size: 35px; }
+		h4 { font-size: 30px; }
+		h5 { font-size: 25px; }
+		p {
+			/*text-shadow: 1px 1px 5px #222;*/
+		}
+	}
+}

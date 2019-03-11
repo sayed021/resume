@@ -1,0 +1,101 @@
+/*left sidebar CSS here*/
+
+.left-sitebar  {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	width: 300px;
+	max-width: 300px;
+	height: calc(100vh - 20px) ;
+	padding: 20px;
+	background: #fefefe;
+	border-radius: 20px;
+	text-align: center;
+	overflow: auto;
+	.left-sitebar-content {
+		display: flex;
+		height: 100%;
+		background: #fff;
+    	flex-direction: column;
+		.card {
+			max-width: 200px;
+			margin: 0 auto;
+			-webkit-box-shadow: inherit;
+			box-shadow: inherit;
+			border-top: 2px solid #eee;
+		}
+		.profile-image {
+			width: 220px;
+			height: 220px;
+			min-height: 220px;
+			margin: 0 auto;
+			border-radius: 50%;
+			overflow: hidden;
+			border: 5px solid #eee;
+			img{
+				display: block;
+				max-width: 100%;
+				height: auto;
+			}
+		}
+		.basicinfo {
+			text-align: center;
+			font-size: 20px;
+			h1 {
+				font-size: 16px;
+				text-transform: uppercase;
+				font-weight: 600;
+				margin: 10px 0 0 0;
+				padding: 0;
+			}
+			h2 {
+				margin: 0;
+				padding: 0 0 20px 0;
+				font-size: 14px;
+			}
+		}
+		.connected {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			li {
+				padding: 2px;
+			}
+		}
+		.left-menu {
+			margin: 0;
+			padding: 20px 0 0 0;
+			width: 200px;
+			text-align: left;
+			li {
+				margin: 0;
+				padding: 2px 0;
+				font-size: 18px;
+				line-height: 20px;
+				font-weight: 500;
+				display: block;
+				letter-spacing: 1px;
+				a {
+					text-transform: capitalize;
+					color: rgb(45, 175, 194);
+					display: inline-block;
+					position: relative;
+					padding: 5px 10px;
+					overflow: hidden;
+					background: linear-gradient(to right, #1faac1 0%, #b2f4ff 100%);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+					border-bottom: 2px solid transparent;
+					transition: 0.3s;
+					&:hover  {
+						font-weight: 800;
+						border-bottom-color: rgb(45, 175, 194);;
+					}
+				}
+			}
+		}
+		footer {
+			margin-top: auto;
+		}
+	}
+}
