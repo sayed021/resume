@@ -1,26 +1,37 @@
 
 body {
-	background: -webkit-linear-gradient(to right, #DEE8CE, #1EAAC1);
-	background: linear-gradient(to right, #DEE8CE, #1EAAC1);
-	font-family: 'Raleway', sans-serif;
-	/*font-family: 'Niconne', cursive;*/
-	font-size: 20px;
-	line-height: 30px;
+	font-family: 'Roboto', sans-serif;
+
+	font-size: 16px;
+	line-height: 24px;
 	font-weight: 400;
 	color: #333;
+	background: #eee;
 }
 h1,h2,h3,h4,h5 {
-	font-family: 'Niconne', cursive;
-	font-weight: 700;
+	font-weight: 500;
 	position: relative;
+	text-transform: uppercase;
 }
 
+@import 'utility';
 @import 'spacing';
 
 .main-area {
 	position: relative;
-	min-height: 100vh;
-	overflow-y: hidden; 
-	@import 'left-panel.scss';
-	@import 'main';
+	height: 100vh;
+	overflow: hidden;
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 10px 0;
+	border-radius: 5px;
+}
+
+@import 'left-panel.scss';
+@import 'header';
+@import 'main';
+@import 'footer';
+
+.mCSB_inside > .mCSB_container {
+	margin-right: 15px;
 }

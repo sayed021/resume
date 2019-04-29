@@ -2,15 +2,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-    	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    	<link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
+	  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     	<link href="https://fonts.googleapis.com/css?family=Niconne" rel="stylesheet">
 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-    	<link type="text/css" rel="stylesheet" href="style.css"  media="screen,projection"/>
-    	<link rel="stylesheet" type="text/css" href="font-awesome4/css/font-awesome.min.css">
+    	<link rel="stylesheet" href="font-awesome4/css/font-awesome.min.css">
+    	<link rel="stylesheet" href="vendors/mscroll/jquery.mCustomScrollbar.css">
+    	<link rel="stylesheet" href="style.css"  media="screen,projection"/>
 
     	<title>Test site</title>
     </head>
@@ -24,33 +24,46 @@
 
     	<div class="main-area">
 
-    		<div class="left-sitebar z-depth-2">
+    		<div class="left-sitebar">
     			<div class="left-sitebar-content">
+	    			<div class="basicinfo">
+	    				<strong>Sayed</strong>
+	    				<p>Simple Title</p>
+	    			</div>
     				<div class="profile-image">
     					<img src="images/user.png" alt="" width="451" height="451" />
     				</div>
-	    			
-	    			<div class="basicinfo">
-	    				<h1>Md Abu Sayed</h1>
-	    				<h2>Simple Title</h2>
-	    			</div>
+    				<div class="profile-area">
+    					<div class="sunglass">
+    						<img src="images/sunglass.png" alt="" width="727" height="295" />
+    					</div>
+    					<ul class="profile-list list-unstyled">
+    						<li>
+    							<span class="dimont"></span>
+    							<strong>Name::</strong> Description
+    						</li>
+    						<li>
+    							<span class="dimont"></span>
+    							<strong>Birthday:</strong>: Description
+    						</li>
+    						<li>
+    							<span class="dimont"></span>
+    							<strong>Job::</strong> Description
+    						</li>
+    						<li>
+    							<span class="dimont"></span>
+    							<strong>Email::</strong> Description
+    						</li>
+    						<li>
+    							<span class="dimont"></span>
+    							<strong>Skype::</strong> Description
+    						</li>
+    					</ul>
+                        <div>
+                            <a href="#" class="btn btn-primary"><span>Download Resume</span> <i class="material-icons">save_alt</i></a>
+                        </div>
+    				</div>
 
-	    			<div class="card">
-		    			<small class="mini-title">Connected with</small>
-		    			<ul class="connected">
-		    				<li><a href="#" class="btn-floating btn-small waves-effect waves-light"><i class="fa fa-linkedin"></i></a></li>
-		    				<li><a href="#" class="btn-floating btn-small waves-effect waves-light "><i class="fa fa-stack-overflow"></i></a></li>
-		    				<li> <a class="btn-floating btn-small waves-effect waves-light "><i class="fa fa-address-book-o" aria-hidden="true"></i></a></li>
-		    				<li> <a class="btn-floating btn-small waves-effect waves-light "><i class="fa fa-eercast" aria-hidden="true"></i></a></li>
-		    			</ul>
-			    	</div>
-
-			    	<div class="card">
-			    		<ul class="left-menu">
-			    			<li><a href="#">Menu 1</a></li>
-			    			<li><a href="#">Menu 2</a></li>
-			    		</ul>
-			    	</div>
 
 			    	<footer>
 			    		<ul class="connected m-0 p-0">
@@ -64,7 +77,10 @@
     		</div>
 
     		<div class="main-content">
-    			<div class="contant">
+    			<header class="site-header">
+    				header
+    			</header>
+    			<div class="content mCustomScrollbar" id="mscroll" data-mcs-theme="rounded-dots-dark">
     				<div class="card">
 	    				<h2>Simple Title 1</h2>
 	    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -80,11 +96,8 @@
 	    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven</p>
     				</div>
-
     				<div class="card">
-
-
-	    				<h2>Simple Title 2</h2>
+	    				<h2>Simple Title 1</h2>
 	    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 	    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -97,8 +110,9 @@
 	    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven</p>
-	    			
-	    				<h2>Simple Title 3</h2>
+    				</div>
+    				<div class="card">
+	    				<h2>Simple Title 1</h2>
 	    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 	    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -111,58 +125,39 @@
 	    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven</p>
-	    				<ul>
-	    					<li>simple list</li>
-	    					<li>simple list</li>
-	    					<li>simple list</li>
-	    					<li>simple list</li>
-	    					<li>simple list</li>
-	    				</ul>
-	    			</div>
+    				</div>
     				<div class="card">
-
-    				<h2>Simple Title 4</h2>
-    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.veniam,
-    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven</p>
-						</div>
-    				<div class="card">
-
-    				<h2>Simple Title 5</h2>
-    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.veniam,
-    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven</p>
+	    				<h2>Simple Title 1</h2>
+	    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.veniam,
+	    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven</p>
+    				</div>
     			</div>
-    			</div>
-    		</div>
+    			<footer class="footer">
+    				<p>title</p>
+    			</footer>
+    		</div> 
     	</div>
 
 
 
 
-    	<script type="text/javascript" src="js/jquery.min.js"></script>
-    	<script type="text/javascript" src="js/materialize/materialize.min.js"></script>
+    	<script src="vendors/jquery.min.js"></script>
+        <script src="vendors/writter/writer.js"></script>
+    	<script src="vendors/mscroll/jquery.mCustomScrollbar.min.js"></script>
 
     	<script>
     		$(window).on('load',  function(event) {
+    			$("#mscroll").mCustomScrollbar();
     			setTimeout(function(){
     				$('.pageLoader').fadeOut(300);
     			},200)
