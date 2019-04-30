@@ -1,7 +1,7 @@
-
+@import 'pageLoader';
+@import 'scaleAnimation';
 body {
 	font-family: 'Roboto', sans-serif;
-
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
@@ -27,11 +27,18 @@ h1,h2,h3,h4,h5 {
 	border-radius: 5px;
 }
 
-@import 'left-panel.scss';
+@import 'leftPanel';
 @import 'header';
 @import 'main';
 @import 'footer';
 
 .mCSB_inside > .mCSB_container {
-	margin-right: 15px;
+	margin-right: 0;
+}
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_draggerRail {
+	background: inherit;
+}
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #00dbf7;
+    border: 1px solid #fff;
 }

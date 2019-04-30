@@ -3,12 +3,10 @@
 <html>
     <head>
 
-	  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     	<link href="https://fonts.googleapis.com/css?family=Niconne" rel="stylesheet">
 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
     	<link rel="stylesheet" href="font-awesome4/css/font-awesome.min.css">
+
     	<link rel="stylesheet" href="vendors/mscroll/jquery.mCustomScrollbar.css">
     	<link rel="stylesheet" href="style.css"  media="screen,projection"/>
 
@@ -33,7 +31,7 @@
     				<div class="profile-image">
     					<img src="images/user.png" alt="" width="451" height="451" />
     				</div>
-    				<div class="profile-area">
+    				<div class="profile-area py-2">
     					<div class="sunglass">
     						<img src="images/sunglass.png" alt="" width="727" height="295" />
     					</div>
@@ -64,23 +62,57 @@
                         </div>
     				</div>
 
-
-			    	<footer>
-			    		<ul class="connected m-0 p-0">
-		    				<li><a href="#" class="btn-floating btn-small waves-effect waves-light"><i class="fa fa-linkedin"></i></a></li>
-		    				<li><a href="#" class="btn-floating btn-small waves-effect waves-light "><i class="fa fa-stack-overflow"></i></a></li>
-		    				<li> <a class="btn-floating btn-small waves-effect waves-light "><i class="fa fa-address-book-o" aria-hidden="true"></i></a></li>
-		    				<li> <a class="btn-floating btn-small waves-effect waves-light "><i class="fa fa-eercast" aria-hidden="true"></i></a></li>
-		    			</ul>
+			    	<footer class="pt-2">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                          <button type="button" class="btn btn-secondary"><i class="fa fa-linkedin"></i></button>
+                          <button type="button" class="btn btn-secondary"><i class="fa fa-stack-overflow"></i></button>
+                          <button type="button" class="btn btn-secondary"><i class="fa fa-address-book-o" aria-hidden="true"></i></button>
+                          <button type="button" class="btn btn-secondary"><i class="fa fa-eercast" aria-hidden="true"></i></button>
+                        </div>
 			    	</footer>
     			</div>
     		</div>
 
     		<div class="main-content">
-    			<header class="site-header">
+    			<!-- <header class="site-header">
     				header
-    			</header>
+    			</header> -->
+
     			<div class="content mCustomScrollbar" id="mscroll" data-mcs-theme="rounded-dots-dark">
+
+
+                    <section class="banner-section position-relative">
+                        <div class="overlay"></div>
+                        <div class="banner carousel slide carousel-fade" id="carouselExampleIndicators" data-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="images/banner/banner-image1.jpg" alt="" width="1200" height="630">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/banner/banner-image2.0.jpg" alt="" width="1200" height="630">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/banner/banner-image2.1.jpg" alt="" width="1200" height="630">
+                            </div>
+                          </div>
+                          <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                          </ol>
+                        </div>
+                        <div class="banner-info">
+                            <div class="name-effect">
+                                <span>S</span>
+                                <span>A</span>
+                                <span>Y</span>
+                                <span>E</span>
+                                <span>D</span>
+                            </div>
+                        </div>
+                    </section>
+
+
     				<div class="card">
 	    				<h2>Simple Title 1</h2>
 	    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -142,9 +174,9 @@
 	    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven</p>
     				</div>
     			</div>
-    			<footer class="footer">
+    			<!-- <footer class="footer">
     				<p>title</p>
-    			</footer>
+    			</footer> -->
     		</div> 
     	</div>
 
@@ -153,6 +185,7 @@
 
     	<script src="vendors/jquery.min.js"></script>
         <script src="vendors/writter/writer.js"></script>
+        <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
     	<script src="vendors/mscroll/jquery.mCustomScrollbar.min.js"></script>
 
     	<script>
