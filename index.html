@@ -4,12 +4,9 @@
     <head>
 
     	<link href="https://fonts.googleapis.com/css?family=Niconne" rel="stylesheet">
-
-    	<link rel="stylesheet" href="font-awesome4/css/font-awesome.min.css">
-
     	<link rel="stylesheet" href="vendors/mscroll/jquery.mCustomScrollbar.css">
+        <link rel="stylesheet" href="vendors/font-awesome4/css/fontawesome.css">
     	<link rel="stylesheet" href="style.css"  media="screen,projection"/>
-
     	<title>Test site</title>
     </head>
     <body>
@@ -19,9 +16,7 @@
     		</div>
     	</div>
 
-
     	<div class="main-area">
-
     		<div class="left-sitebar">
     			<div class="left-sitebar-content">
 	    			<div class="basicinfo">
@@ -58,16 +53,16 @@
     						</li>
     					</ul>
                         <div>
-                            <a href="#" class="btn btn-primary"><span>Download Resume</span> <i class="material-icons">save_alt</i></a>
+                            <a href="#" class="btn btn-primary"><span>Download Resume</span> <i class="fas fa-cloud-download-alt"></i></a>
                         </div>
     				</div>
 
 			    	<footer class="pt-2">
                         <div class="btn-group" role="group" aria-label="Basic example">
-                          <button type="button" class="btn btn-secondary"><i class="fa fa-linkedin"></i></button>
-                          <button type="button" class="btn btn-secondary"><i class="fa fa-stack-overflow"></i></button>
-                          <button type="button" class="btn btn-secondary"><i class="fa fa-address-book-o" aria-hidden="true"></i></button>
-                          <button type="button" class="btn btn-secondary"><i class="fa fa-eercast" aria-hidden="true"></i></button>
+                          <button type="button" class="btn btn-secondary"><i class="fab fa-facebook-f"></i></button>
+                          <button type="button" class="btn btn-secondary"><i class="fab fa-linkedin-in"></i></button>
+                          <button type="button" class="btn btn-secondary"><i class="fab fa-stack-overflow"></i></button>
+                          <button type="button" class="btn btn-secondary"><i class="fab fa-github"></i></button>
                         </div>
 			    	</footer>
     			</div>
@@ -81,7 +76,7 @@
     			<div class="content mCustomScrollbar" id="mscroll" data-mcs-theme="rounded-dots-dark">
 
 
-                    <section class="banner-section position-relative">
+                    <section class="banner-section position-relative wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
                         <div class="overlay"></div>
                         <div class="banner carousel slide carousel-fade" id="carouselExampleIndicators" data-ride="carousel">
                           <div class="carousel-inner">
@@ -102,77 +97,89 @@
                           </ol>
                         </div>
                         <div class="banner-info">
-                            <div class="name-effect">
-                                <span>S</span>
-                                <span>A</span>
-                                <span>Y</span>
-                                <span>E</span>
-                                <span>D</span>
+                            <div class="name-effect wow fadeInDownBig fadeIn" data-wow-duration="800ms" data-wow-delay="1s">
+                                <span class="text" data-text="thanks">SAYED</span>
+                                <span class="gradient"></span>
+                                <span class="spotlight"></span>
                             </div>
+                            <h1>
+                                <strong>♦</strong>: 
+                                <span 
+                                    class="typer" 
+                                    id="some-id" 
+                                    data-delay="150" 
+                                    data-words="UI Engineear, front-end developer,Angular Developer, javascript Engineear, problem solver, Wordpress Developer"
+                                ></span>
+
+                                <span style="vertical-align:middle;" class="cursor" data-cursorDisplay="|" data-owner="some-id"></span>
+                            </h1>
                         </div>
                     </section>
 
+                    <!-- content secton -->
+                    <section>
+        				<div class="card wow fadeInUp" data-wow-duration="1ms" data-wow-delay="500ms">
+    	    				<h2>Simple Title 1</h2>
+    	    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    	    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    	    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    	    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    	    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    	    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.veniam,
+    	    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    	    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    	    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    	    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    	    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    	    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven</p>
+        				</div>
+        				<div class="card">
+    	    				<h2>Simple Title 1</h2>
+    	    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    	    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    	    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    	    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    	    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    	    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.veniam,
+    	    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    	    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    	    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    	    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    	    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    	    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven</p>
+        				</div>
+        				<div class="card">
+    	    				<h2>Simple Title 1</h2>
+    	    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    	    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    	    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    	    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    	    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    	    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.veniam,
+    	    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    	    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    	    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    	    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    	    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    	    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven</p>
+        				</div>
+        				<div class="card">
+    	    				<h2>Simple Title 1</h2>
+    	    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    	    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    	    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    	    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    	    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    	    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.veniam,
+    	    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    	    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    	    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    	    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    	    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    	    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven</p>
+        				</div>
+                    </section>
 
-    				<div class="card">
-	    				<h2>Simple Title 1</h2>
-	    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.veniam,
-	    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven</p>
-    				</div>
-    				<div class="card">
-	    				<h2>Simple Title 1</h2>
-	    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.veniam,
-	    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven</p>
-    				</div>
-    				<div class="card">
-	    				<h2>Simple Title 1</h2>
-	    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.veniam,
-	    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven</p>
-    				</div>
-    				<div class="card">
-	    				<h2>Simple Title 1</h2>
-	    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.veniam,
-	    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven</p>
-    				</div>
     			</div>
     			<!-- <footer class="footer">
     				<p>title</p>
@@ -180,22 +187,15 @@
     		</div> 
     	</div>
 
-
-
-
     	<script src="vendors/jquery.min.js"></script>
         <script src="vendors/writter/writer.js"></script>
-        <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
-    	<script src="vendors/mscroll/jquery.mCustomScrollbar.min.js"></script>
 
-    	<script>
-    		$(window).on('load',  function(event) {
-    			$("#mscroll").mCustomScrollbar();
-    			setTimeout(function(){
-    				$('.pageLoader').fadeOut(300);
-    			},200)
-    		});
-    	</script>
+        <script src="vendors/wow.min.js"></script>
+
+        <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    	<script src="vendors/mscroll/jquery.mCustomScrollbar.min.js"></script>
+        <script src="js/main.js"></script>
+    	
     </body>
 </html>
         

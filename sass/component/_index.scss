@@ -1,5 +1,5 @@
 @import 'pageLoader';
-@import 'scaleAnimation';
+
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
@@ -29,15 +29,13 @@ h1,h2,h3,h4,h5 {
 
 @import 'leftPanel';
 @import 'header';
+@import 'banner';
 @import 'main';
 @import 'footer';
 
-.mCSB_inside > .mCSB_container {
-	margin-right: 0;
-}
-.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_draggerRail {
-	background: inherit;
-}
+.mCSB_inside > .mCSB_container { margin-right: 0; }
+.mCSB_scrollTools .mCSB_dragger { z-index: 5; }
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_draggerRail { background: inherit; }
 .mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
     background-color: #00dbf7;
     border: 1px solid #fff;
