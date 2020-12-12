@@ -21,6 +21,18 @@ $(document).ready(function() {
     wow.init();
 
 
+    $(".iziModal").iziModal({
+        radius: 5,
+        padding: 20,
+       closeButton: true,
+       title: 'title',
+       width: 1250,
+       headerColor: '#002e5b',
+       /* bodyOverflow: Forcing overflow hidden in the document when opening the modal, closing the modal, overflow will be restored. */
+       bodyOverflow: true,
+    });
+
+
 
     
     /**************************************************************************

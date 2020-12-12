@@ -600,18 +600,19 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 |----------------------------------------------------------------------------
 */
 .portfolio-nav ul {
-  padding: 0 30px;
+  padding: 0;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 20px;
 }
+
 .portfolio-nav ul li {
   list-style-type: none;
   display: inline;
-  margin: 10px;
+  margin: 10px 5px;
   cursor: pointer;
   text-transform: uppercase;
   border-radius: 20px;
-  padding: 5px 15px;
+  padding: 5px 10px;
 }
 .portfolio-nav ul li.active,
 .portfolio-nav ul li:hover {
