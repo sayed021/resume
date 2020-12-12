@@ -612,6 +612,8 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
   padding: 0;
   text-align: center;
   padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .portfolio-nav ul li {
