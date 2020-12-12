@@ -129,13 +129,22 @@ body {
 .main-container {
   margin-top: 15px;
   margin-bottom: 15px;
-  padding-top: 15px;
+  
   padding-bottom: 15px;
   border-radius: 20px;
   background: #fff;
 }
+@media screen and (min-width: 993px) {
+  .main-container {
+    padding-top: 15px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .content-section > .row {
+    margin-bottom: 0;
+  }
+}
 /* style for
-
 ***** Sidebar  *****
 
 */
@@ -608,11 +617,12 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 .portfolio-nav ul li {
   list-style-type: none;
   display: inline;
-  margin: 10px 5px;
+  margin: 20px 5px  20px 5px;
   cursor: pointer;
   text-transform: uppercase;
   border-radius: 20px;
   padding: 5px 10px;
+  white-space: nowrap;
 }
 .portfolio-nav ul li.active,
 .portfolio-nav ul li:hover {
