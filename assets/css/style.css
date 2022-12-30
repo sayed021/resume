@@ -299,6 +299,10 @@ body {
 .tab-menu .btn:hover,
 .tab-menu .btn.active {
   background: #767270;
+  background: #9c27b0;
+  color: #ffffff;
+  border: 2px solid #ff9800;
+  box-shadow: 0px 0px 12px inset #6b6b6d;
 }
 /* style for
 
