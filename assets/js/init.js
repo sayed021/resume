@@ -1,6 +1,9 @@
 $(document).ready(function() {
     "use strict";
 
+    document.getElementById('expYear').innerText = new Date().getFullYear() - 2016;
+
+
 
     /**************************************************************************
                  SKILL BAR 
