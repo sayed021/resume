@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    "use strict";
+   // "use strict";
 
     document.getElementById('expYear').innerText = parseInt( new Date().getFullYear() ) - 2016;
 
