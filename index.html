@@ -1,419 +1,182 @@
 <!DOCTYPE html>
-<!--[if IE 7]><html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
-<!--[if IE 8]><html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
-<!--[if gt IE 8]><!-->
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-
-    <!-- TITLE OF SITE-->
-    <title> Md Abu Sayed | Resume </title>
-
-    <!-- META TAG -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CV, Portfolio, Resume">
-    <meta name="author" content="Md. Siful Islam, Desiver Web">
-
-    <!-- FAVICON -->
-    <link rel="icon" href="assets/images/favicon.ico">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-icon-114x114.png">
-
-    <!-- ========================================
-                Stylesheets
-        ==========================================-->
-
-    <!-- MATERIALIZE CORE CSS -->
-    <link href="assets/css/materialize.min.css" rel="stylesheet">
-
-
-    <!-- ADDITIONAL CSS -->
-    <link rel="stylesheet" href="assets/css/animate.css">
-
-
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
-
-    <!--FONTAWESOME CSS-->
-    <link href="assets/icons/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- CUSTOM STYLE -->
-    <link href="assets/css/style.css" rel="stylesheet">
-
-
-    <!-- RESPONSIVE CSS-->
-    <link href="assets/css/responsive.css" rel="stylesheet">
-
-    <!-- STYLE SWITCH STYLESHEET ONLY FOR DEMO -->
-    <link rel="stylesheet" href="assets/css/demo.css">
-
-    <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif] -->
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-        <![endif]-->
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abu Sayed — Senior Frontend Developer (React + Next.js)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Inter, Arial, Helvetica, sans-serif; font-size: 10.5pt; line-height: 1.35; color: #111111; background: #ffffff; }
+    .resume { width: 210mm; margin: 0 auto; padding: 0; background: #fff; }
+    header { text-align: center; margin-bottom: 6px; }
+    h1 { font-size: 20pt; font-weight: 700; color: #111111; }
+    .title { font-size: 11pt; font-weight: 600; color: #111111; margin-top: 2px; }
+    .contact, .location { font-size: 10pt; margin-top: 4px; color: #111111; line-height: 1.5; }
+    .contact a, .location a, .project-meta a, .cert-item a { color: #1155cc; text-decoration: underline; text-underline-offset: 2px; }
+    section { margin-top: 10px; }
+    h2 { font-size: 10.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; color: #111111; border-bottom: 1px solid #111111; padding-bottom: 2px; margin-bottom: 6px; }
+    .summary p { text-align: left; color: #000; }
+    .skills-list { font-size: 10pt; line-height: 1.35; margin-bottom: 4px; }
+    .skills-list p { margin-bottom: 3px; }
+    .skills-list strong { font-weight: 700; }
+    .job { margin-bottom: 11px; padding-bottom: 2px; }
+    .job-title { font-weight: 700; font-size: 11pt; color: #111111; margin-bottom: 1px; }
+    .job-meta { font-size: 10pt; color: #111111; margin-bottom: 3px; }
+    ul { margin-left: 18px; margin-top: 2px; list-style-type: disc; }
+    li { margin-bottom: 1px; color: #111111; }
+    .project { margin-bottom: 10px; padding-bottom: 2px; }
+    .project-title { font-weight: 700; font-size: 11pt; }
+    .project-meta { font-size: 10pt; color: #000; margin-bottom: 2px; }
+    .project p { font-size: 10.5pt; color: #000; }
+    .edu-item { margin-bottom: 10px; }
+    .edu-degree { font-weight: 700; }
+    .edu-detail { font-size: 10pt; color: #000; }
+    .cert-item { margin-bottom: 8px; font-size: 10.5pt; }
+    a { color: #1155cc; text-decoration: underline; text-underline-offset: 2px; }
+    strong { font-weight: 700; }
+    .break-before-page { page-break-before: always; break-before: page; margin-top: 0; padding-top: 0; }
+    @media print {
+      body { background: #fff; }
+      .resume { width: 100%; margin: 0; padding: 0; }
+      a { color: #1155cc; text-decoration: underline; }
+      @page { size: A4; margin: 9mm 11mm; }
+    }
+  </style>
 </head>
-
 <body>
-    <!-- Start Container-->
-    <div class="container main-container">
-        <!-- row -->
-        <div class="row">
-            <!-- =========================================
-                           SIDEBAR   
-            ==========================================-->
-            <!-- Start Sidebar -->
-            <aside class="col l4 m12 s12 sidebar z-depth-1" id="sidebar">
-                <!--  Sidebar row -->
-                <div class="row">
-                    <!--  top section   -->
-                    <div class="heading">
-                        <div class="tab-menu">
-                            <a href="index.html" class="waves-effect btn active">Resume</a>
-                            <a href="project.html" class="waves-effect btn ">Project</a>
-                        </div>
-                        <!-- ====================
-                                      IMAGE   
-                            ==========================-->
-                        <div class="feature-img">
-                            <a href="index.html"><img src="assets/images/profile-pic3.jpg" class="responsive-img"
-                                    alt=""></a>
-                        </div>
+  <div class="resume">
+    <header>
+      <h1>Abu Sayed</h1>
+      <div class="title">Senior Frontend Developer (React + Next.js)</div>
+      <p class="contact">
+        <a href="mailto:abusayed.wd@gmail.com">abusayed.wd@gmail.com</a> | +880 1633 156655
+      </p>
+      <p class="contact">
+        <a href="https://github.com/sayedbs">github.com/sayedbs</a> |
+        <a href="https://www.linkedin.com/in/sayed021">linkedin.com/in/sayed021</a> |
+        <a href="https://stackoverflow.com/users/8477792/md-abu-sayed">stackoverflow.com/users/8477792/md-abu-sayed</a>
+      </p>
+      <p class="location">Dhaka, Bangladesh</p>
+    </header>
 
-                        <!-- ========================================
-                                       NAME AND TAGLINE
-                            ==========================================-->
-                        <div class="title col s12 m12 l9 right  wow fadeIn" data-wow-delay="0.1s">
-                            <h2>Md Abu Sayed</h2> <!-- title name -->
-                            <span>Senior UI Engineer</span> <!-- tagline -->
-                        </div>
-                    </div>
-                    <!-- sidebar info -->
-                    <div class="col l12 m12 s12 sort-info sidebar-item">
-                        <div class="row">
-                            <div class="col m12 s12 l3 icon"> <!-- icon -->
-                                <i class="fa fa-user"></i>
-                            </div>
-                            <div class="col m12 s12 l9 info wow fadeIn a1" data-wow-delay="0.1s"> <!-- text -->
-                                <div class="section-item-details">
-                                    <p>With <strong id="expYear">6</span> years plus professional experience, I'm a web
-                                            developer Front-end, and UI
-                                            uses the latest front-end
-                                            technology. High and strong knowledge in front-end use ReactJs, Angular-4+,
-                                            Storybook, Html, CSS, javascript, type-script, maintain high standard Atomic
-                                            design pattern, with BEM methodology And knowledge
-                                            of the Backend. API handling, Dynamic, lazy-loading React/Angular component,
-                                            dynamic, Redux effects like
-                                            thunk, saga, reselect, etc needed for React Frontend development. Also, work
-                                            with any platform UI
-                                            development except mobile native UI.</p>
-                                    <p>
-                                    <p></p>
-                                    Note: "Abu Sayed" Doesn’t compromise product quality.
-                                    </p>
-                                </div>
-                                <div style="padding-bottom: 15px">
-                                    <a target="__blank" href="assets/file/Md_Abu_Sayed.pdf"
-                                        style="width: 100%; margin: 0" class="waves-effect waves-light btn"><i
-                                            class="fa fa-download" aria-hidden="true"></i> Download CV</a>
+    <section class="summary">
+      <h2>Professional Summary</h2>
+      <p>
+        Senior Frontend Developer with <strong>10 years</strong> of experience building scalable, high-performance web applications for enterprise and pharmaceutical clients. <strong>6+ years</strong> of hands-on <strong>React.js (TypeScript)</strong> delivery with <strong>Next.js (SSR, SSG, ISR, CSR)</strong>, <strong>Redux</strong>, <strong>Context API</strong>, <strong>REST APIs</strong>, and modern component architecture. Lead full-stack frontend team at Brain Station 23 in Dhaka, delivering reusable UI systems (Storybook, Tailwind CSS, SCSS), performance-optimized applications, and secure integrations for regulated, high-traffic platforms.
+      </p>
+    </section>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- MOBILE NUMBER -->
-                    <div class="col l12 m12 s12  mobile sidebar-item">
-                        <div class="row">
-                            <div class="col m12 s12 l3 icon">
-                                <i class="fa fa-phone"></i> <!-- icon -->
-                            </div>
-                            <div class="col m12 s12 l9 info wow fadeIn a2" data-wow-delay="0.2s">
-                                <div class="section-item-details">
-                                    <div class="personal">
-                                        <h4><a href="tel:555-555-5555">+88 01710403867</a></h4> <!-- Number -->
-                                        <span>mobile</span>
-                                    </div>
+    <section>
+      <h2>Core Skills</h2>
+      <div class="skills-list">
+        <p><strong>Frontend:</strong> React.js, TypeScript, Next.js (SSR, SSG, ISR, CSR), JavaScript, HTML5, CSS3; Redux, Redux-Saga, Redux Thunk, Context API; RESTful API integration, Node.js, Express; reusable components, Storybook, code splitting, lazy loading, memoization</p>
+        <p><strong>Styling &amp; UI:</strong> Tailwind CSS, SCSS, Bootstrap, BEM, Atomic Design, responsive and cross-browser UI, WCAG accessibility</p>
+        <p><strong>Architecture &amp; Delivery:</strong> Git, Agile/Scrum, JIRA, Confluence, technical documentation, collaborative development workflows</p>
+        <p><strong>Security &amp; Integration:</strong> Frontend security best practices, authentication and session handling, secure API integration for enterprise applications</p>
+        <p><strong>Enterprise &amp; Tools:</strong> Strapi CMS, AEM (Cloud), Docker, SQL, MySQL, PostgreSQL, .NET UI, Java integrations</p>
+      </div>
+    </section>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--  EMAIL -->
-                    <div class="col l12 m12 s12  email sidebar-item ">
-                        <div class="row">
-                            <div class="col m12 s12 l3 icon">
-                                <i class="fa fa-envelope"></i> <!-- icon -->
-                            </div>
-                            <div class="col m12 s12 l9 info wow fadeIn a3" data-wow-delay="0.3s">
-                                <div class="section-item-details">
-                                    <div class="personal">
-                                        <h4><a href="mailto:abusayed.wd@gmail.com">abusayed.wd@gmail.com</a></h4>
-                                        <!-- Email -->
-                                        <span>personal</span>
-                                    </div>
-                                    <div class="work">
-                                        <h4><a href="mailto:sayeed@brainstation-23.com">sayeed@brainstation-23.com</a>
-                                        </h4>
-                                        <!-- Email -->
-                                        <span>office</span> <br>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ADDRESS  -->
-                    <div class="col l12 m12 s12  address sidebar-item ">
-                        <div class="row">
-                            <div class="col l3 m12  s12 icon">
-                                <i class="fa fa-home"></i> <!-- icon -->
-                            </div>
-                            <div class="col m12 s12 l9 info wow fadeIn a4" data-wow-delay="0.4s">
-                                <div class="section-item-details">
-                                    <div class="address-details"> <!-- address  -->
-                                        <h4>127/kha Boatgurd <span>(2nd floor)</span>, <br> Khilkhet, Dhkaa-1229.<br>
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- SKILLS -->
-                    <div class="col l12 m12 s12  skills sidebar-item">
-                        <div class="row">
-                            <div class="col m12 l3 s12 icon">
-                                <i class="fa fa-calendar-o"></i> <!-- icon -->
-                            </div>
-                            <!-- Skills -->
-                            <div class="col m12 l9 s12 skill-line a5 wow fadeIn" data-wow-delay="0.5s">
-                                <h3>Professional Skills </h3>
+    <section>
+      <h2>Professional Experience</h2>
 
+      <div class="job">
+        <p class="job-title">Senior Frontend Developer (Lead Full Stack Team)</p>
+        <p class="job-meta">Brain Station 23 Ltd, Dhaka, Bangladesh | Jul 2022 - Present</p>
+        <ul>
+          <li>Led full-stack frontend team delivering scalable React (TypeScript) and Next.js applications for global enterprise and pharma clients (AbbVie, Recordati)</li>
+          <li>Built reusable, maintainable UI component libraries using Storybook, Atomic Design, SCSS, and Tailwind CSS, improving development speed and UI consistency</li>
+          <li>Managed application state with Redux, Redux-Saga, Redux Thunk, and Context API across complex enterprise frontends</li>
+          <li>Developed SSR, SSG, and ISR Next.js applications integrated with REST APIs, Node.js backends, and Strapi headless CMS</li>
+          <li>Optimized frontend performance using code splitting, lazy loading, caching strategies, and bundle-size reduction for high-traffic applications</li>
+          <li>Delivered responsive, cross-browser compatible interfaces with WCAG accessibility standards for regulated environments</li>
+          <li>Integrated secure authentication flows and API error handling for enterprise user management and content platforms</li>
+          <li>Collaborated in Agile/Scrum ceremonies including sprint planning, estimation, code reviews, and cross-functional delivery</li>
+        </ul>
+      </div>
 
+      <div class="job">
+        <p class="job-title">UI Engineer</p>
+        <p class="job-meta">Brain Station 23 Ltd, Dhaka, Bangladesh | Dec 2018 - Jun 2022</p>
+        <ul>
+          <li>Developed React and TypeScript UI for enterprise pharmaceutical and healthcare platforms</li>
+          <li>Built reusable components with SCSS, Bootstrap, BEM, and Atomic Design for multi-market applications</li>
+          <li>Integrated frontend applications with REST APIs and content-driven AEM templates</li>
+          <li>Optimized page performance, SEO, responsive layout, and accessibility compliance</li>
+          <li>Maintained Git workflows and Agile delivery using JIRA and Confluence</li>
+        </ul>
+      </div>
+    </section>
 
-                                <span>HTML</span>
-                                <div class="progress">
-                                    <div class="determinate"> 95%</div>
-                                </div>
+    <section>
+      <div class="job break-before-page">
+        <p class="job-title">Junior Web Developer</p>
+        <p class="job-meta">Constant MD, Front-end | Sep 2018 - Nov 2018</p>
+        <ul>
+          <li>Developed React components and responsive WordPress themes for client projects</li>
+          <li>Performed page optimization, GTM integration, and Google Search Console setup</li>
+        </ul>
+      </div>
 
-                                <span>CSS</span>
-                                <div class="progress">
-                                    <div class="determinate">95%</div>
-                                </div>
+      <div class="job">
+        <p class="job-title">Associate Web Developer</p>
+        <p class="job-meta">Baseonesolutions | Mar 2016 - Sep 2018</p>
+        <ul>
+          <li>Built responsive HTML/CSS interfaces and WordPress themes from design assets</li>
+          <li>Delivered SEO-optimized, scalable web pages with performance-focused front-end implementation</li>
+        </ul>
+      </div>
+    </section>
 
-                                <span>SCSS/Preprocessor </span>
-                                <div class="progress">
-                                    <div class="determinate">85%</div>
-                                </div>
+    <section>
+      <h2>Selected Projects</h2>
 
-                                <span>Javascript</span>
-                                <div class="progress">
-                                    <div class="determinate">80%</div>
-                                </div>
+      <div class="project">
+        <p class="project-title">Recordati Plus (Pharma HCP Engagement Platform)</p>
+        <p class="project-meta">Brain Station 23 | <a href="https://recordati-plus.de">https://recordati-plus.de</a></p>
+        <ul>
+          <li>Built scalable platform using Next.js with SSR, ISR, and SSG for performance and SEO optimization</li>
+          <li>Integrated Strapi headless CMS via REST APIs for dynamic, specialty-based content delivery</li>
+          <li>Developed HCP profile system with Zoom meetings, Moodle course access, and certification tracking workflows</li>
+          <li>Implemented GA4 analytics for user behavior tracking including clicks, scroll depth, form submissions, and video engagement</li>
+          <li>Delivered WCAG-compliant, reusable React (TypeScript) component architecture for regulated pharma environments</li>
+          <li>Optimized frontend performance and maintainability for high-traffic enterprise healthcare use cases</li>
+        </ul>
+      </div>
 
-                                <span>ReactJS</span>
-                                <div class="progress">
-                                    <div class="determinate">75%</div>
-                                </div>
-                                <span>Next JS</span>
-                                <div class="progress">
-                                    <div class="determinate">80%</div>
-                                </div>
+      <div class="project">
+        <p class="project-title">AbbVie EMS - Enterprise Management System</p>
+        <p class="project-meta">Jun 2020 - Dec 2024 | Client: AbbVie | <a href="https://abbviepro.com">https://abbviepro.com</a></p>
+        <p>Enterprise React platform with dynamic page builder, Storybook-documented components, and performance-optimized SCSS UI supporting unlimited pages across regulated pharmaceutical markets.</p>
+      </div>
 
-                                <span>Angular4+</span>
-                                <div class="progress">
-                                    <div class="determinate">65%</div>
-                                </div>
+      <div class="project">
+        <p class="project-title">AbbVie OUS - AEM Cloud Migration</p>
+        <p class="project-meta">Apr 2023 - Dec 2024 | Client: AbbVie | Brain Station 23</p>
+        <p>Migrated 10 AEM codebases (110GB assets) to AEM Cloud within 4 months with React frontend integration and Agile delivery.</p>
+      </div>
+    </section>
 
-                                <span>ES-6</span>
-                                <div class="progress">
-                                    <div class="determinate">80%</div>
-                                </div>
+    <section>
+      <h2>Education</h2>
+      <div class="edu-item">
+        <p class="edu-degree">Bachelor of Science in Computer Science and Engineering</p>
+        <p class="edu-detail">Uttara University, Dhaka, Bangladesh | May 2017 - Feb 2021 | CGPA: 3.51 / 4.00</p>
+      </div>
+      <div class="edu-item">
+        <p class="edu-degree">Diploma in Computer Science</p>
+        <p class="edu-detail">Kishoregonj Polytechnic Institute, Bangladesh | 2010 - 2014 | CGPA: 3.46 / 4.00</p>
+      </div>
+    </section>
 
-
-                                <span>Adobe Photoshop/Illustrator</span>
-                                <div class="progress">
-                                    <div class="determinate"> 70% </div>
-                                </div>
-
-                                <span>Figma, Japlin, XD</span>
-                                <div class="progress">
-                                    <div class="determinate">60%</div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Community links -->
-                    <div class="col l12 m12 s12  skills sidebar-item">
-                        <div class="row">
-                            <div class="col m12 l3 s12 icon">
-                                <i class="fa fa-anchor"></i> <!-- icon -->
-                            </div>
-                            <!-- Skills -->
-                            <div class="col m12 l9 s12 skill-line a5 wow fadeIn" data-wow-delay="0.5s">
-                                <div class="section-item-details">
-                                    <div class="address-details"> <!-- address  -->
-                                        <h3>Community links:</h4>
-                                            <ul class="community-links">
-                                                <li>
-                                                    <p><a target="__blank"
-                                                            href="https://stackoverflow.com/users/8477792/md-abu-sayed"><i
-                                                                class="fa fa-stack-overflow" aria-hidden="true"></i>
-                                                            Stackoverflow</a></p>
-                                                </li>
-                                                <li>
-                                                    <p><a target="__blank" href="https://github.com/sayed021"><i
-                                                                class="fa fa-github" aria-hidden="true"></i> Github</a>
-                                                    </p>
-                                                </li>
-                                                <li>
-                                                    <p><a target="__blank"
-                                                            href="https://www.linkedin.com/in/sayed021/"><i
-                                                                class="fa fa-linkedin" aria-hidden="true"></i>
-                                                            LinkedIn</a></p>
-                                                </li>
-                                                <li>
-                                                    <p><a target="__blank"
-                                                            href="https://jsfiddle.net/user/sayed021/fiddles"><i
-                                                                class="fa fa-jsfiddle" aria-hidden="true"></i>
-                                                            Jsfiddle</a></p>
-                                                </li>
-                                            </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- end row -->
-            </aside><!-- end sidebar -->
-
-            <!-- =========================================
-                   Work experiences
-                ==========================================-->
-
-            <section class="col s12 m12 l8 section">
-                <div class="row">
-                    <div class="section-wrapper z-depth-1">
-                        <div class="section-icon col s12 m12 l2">
-                            <i class="fa fa-suitcase"></i>
-                        </div>
-                        <div class="custom-content col s12 m12 l10 wow fadeIn a1" data-wow-delay="0.1s">
-                            <h2>Work Experience</h2>
-
-                            <div class="custom-content-wrapper wow fadeIn a2" data-wow-delay="0.2s">
-                                <h3>Senior UI Engineer <span>@Brain Station 23 Ltd</span></h3>
-                                <span>Dec 2018-Continuing </span>
-                                <p> Build responsive, pixel-perfect, cross-browser compatible websites with make sure
-                                    Web performance and accessibility. • Modify the existing code as needed. • Create
-                                    custom jQuery plugins and
-                                    modify
-                                    existing plugins. • Develop web applications using Angular update and JavaScript. •
-                                    Any Project as
-                                    Client Requirements.</p>
-                            </div>
-                            <div class="custom-content-wrapper wow fadeIn a3" data-wow-delay="0.3s">
-                                <h3>JUNIOR WEB DEVELOPER FRONTEND <span>@ConstantMD</span></h3>
-                                <span>Sep 2018-Nov 2018</span>
-                                <p>• Build responsive websites from PSD, AI or PDF • Modify existing code site. •
-                                    Google-Page And YSlow Speed Optimize. • Any Project as Client Requirements. •
-                                    Creating and customizing Wordpress theme and plugin</p>
-                            </div>
-                            <div class="custom-content-wrapper wow fadeIn a4" data-wow-delay="0.4s">
-                                <h3>WEB DEVELOPER <span> @Baseonesolutions</span></h3>
-                                <span>Nov 2015 - Sep 2018 </span>
-                                <p>• Build responsive, pixel-perfect, cross-browser compatible websites from PSD, AI,
-                                    PDF or any other
-                                    documents. • Modify the existing code as needed. • Create custom jQuery plugins and
-                                    modify
-                                    existing plugins. • Develop web applications using Angular 4 and jQuery. •
-                                    GooglePage Speed And
-                                    Y-Slow Speed Analyzing and Optimization. • Any Project As Client Requirements.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- ========================================
-                         Education 
-                        ==========================================-->
-
-                    <div class="section-wrapper z-depth-1">
-                        <div class="section-icon col s12 m12 l2">
-                            <i class="fa fa-graduation-cap"></i>
-                        </div>
-                        <div class="custom-content col s12 m12 l10 wow fadeIn a1" data-wow-delay="0.1s">
-                            <h2>Education </h2>
-
-                            <div class="custom-content-wrapper wow fadeIn a2" data-wow-delay="0.2s">
-                                <h3>Bachelor of Science (BSc) <span>@Uttara University</span></h3>
-                                <span>JAN 2017 - DEC 2020 </span>
-                            </div>
-                            <div class="custom-content-wrapper wow fadeIn a3" data-wow-delay="0.3s">
-                                <h3>Diploma in Engineering <span>@Kishoregonj Polytechnic Institute</span></h3>
-                                <span>JAN 2010 - DEC 2015 </span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- ========================================
-                              Intertests 
-                        ==========================================-->
-
-                    <div class="section-wrapper z-depth-1">
-                        <div class="section-icon col s12 m12 l2">
-                            <i class="fa fa-plane"></i>
-                        </div>
-                        <div class="interests col s12 m12 l10 wow fadeIn" data-wow-delay="0.1s">
-                            <h2>Interestes </h2>
-                            <ul> <!-- interetsr icon start -->
-                                <li><i class="fa fa-book tooltipped" data-position="top" data-delay="50"
-                                        data-tooltip="Reading Book"></i></li>
-                                <li><i class="fa fa-gamepad tooltipped" data-position="top" data-delay="50"
-                                        data-tooltip="Gaming"></i></li>
-
-                                <li><i class="fa fa-headphones tooltipped" data-position="top" data-delay="50"
-                                        data-tooltip="Music"></i></li>
-                                <li><i class="fa fa-comments tooltipped" data-position="top" data-delay="50"
-                                        data-tooltip="Chatting"></i></li>
-                                <li><i class="fa fa-coffee tooltipped" data-position="top" data-delay="50"
-                                        data-tooltip="Coffee"></i></li>
-                            </ul> <!-- interetsr icon end -->
-                        </div>
-                    </div>
-                    <!-- =======================================
-                          portfolio Website
-                        ==========================================-->
-                </div><!-- end row -->
-            </section><!-- end section -->
-        </div> <!-- end row -->
-    </div> <!-- end container -->
-
-    <div class="col12">
-        <span>&copy; 2020 Md Abu Sayed, All rights reserved.</span>
-    </div>
-
-    <!--=====================
-                JavaScript
-        ===================== -->
-    <!-- Jquery core js-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
-    <!-- materialize js-->
-    <script src="assets/js/materialize.min.js"></script>
-
-    <!-- wow js-->
-    <script src="assets/js/wow.min.js"></script>
-
-    <script src="assets/js/validator.min.js"></script>
-
-    <!-- Customized js -->
-    <script src="assets/js/init.js"></script>
-
-
+    <section>
+      <h2>Certifications</h2>
+      <p class="cert-item"><strong>Meta Front-End Developer</strong> - Meta (Facebook) via Coursera | Sep 2022 - Feb 2023 | <a href="https://www.coursera.org/account/accomplishments/professional-cert/MGL4RCRPNWAP">https://www.coursera.org/account/accomplishments/professional-cert/MGL4RCRPNWAP</a></p>
+      <p class="cert-item">Agile Process and Scrum Master | Cyber Security (Brain Station 23 internal training)</p>
+    </section>
+  </div>
 </body>
-
 </html>
